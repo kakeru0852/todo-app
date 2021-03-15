@@ -1,0 +1,79 @@
+.isComplete {
+  text-decoration: line-through;
+}
+
+body {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+.todo-container {
+  background-color: white;
+  margin: 130px 0 40px 0;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+  padding: 16px;
+  list-style: none;
+  & input[type="checkbox"] {
+    width: 40px;
+  }
+}
+button {
+  border: none;
+  background: none;
+  &:focus {
+    outline: 0;
+  }
+}
+.remove {
+  color: red;
+  position: absolute;
+  right: 10px;
+}
+form {
+  text-align: center;
+  & input {
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid #ededed;
+    padding: 10px 40px;
+    &:focus {
+      outline: 0;
+    }
+  }
+  & #js-addTask-trigger {
+    background-color: rgb(118, 178, 235);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 70%;
+    font-size: 25px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    &:hover {
+      color: rgb(118, 178, 235);
+      background-color: white;
+    }
+  }
+}
+.todo-count {
+  font-size: 20px;
+}

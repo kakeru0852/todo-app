@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="bootstrap-reboot.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <form id="js-form">
+        <input id="js-addTask-value" type="text" placeholder="What to do?" autocomplete="off" />
+        <button id="js-addTask-trigger" type="button">ADD TO LIST</button>
+      </form>
+      <ul id="js-addTask-target"></ul>
+    </div>
+    <p id="todo-count" class="todo-count"></p>
+    <script src="todo.js"></script>
+  </body>
+</html>
